@@ -1,0 +1,21 @@
+# Scenario: Visitor with Doorbell and Light
+# A guest walks through the snow toward the door, rings the doorbell,
+# light switches on, they ring the doorbell again, light switches off,
+# and the visitor runs away.
+
+- name: guest.snowwalk
+  params:
+    duration: 3.5
+
+- name: guest.doorbell
+
+- name: light.on
+
+- name: guest.doorbell
+  timing: align_finish+1.0
+
+- name: light.off
+
+- name: guest.snowwalk
+  params:
+    duration: 2.5

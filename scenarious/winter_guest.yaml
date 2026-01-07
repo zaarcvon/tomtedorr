@@ -1,0 +1,11 @@
+- guest.snowwalk
+
+- guest.doorbell
+
+- name: tomten.walk
+  timing: start+2
+
+- name: door.open
+  timing: finish+1.5
+
+- name: door.close

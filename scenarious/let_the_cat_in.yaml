@@ -1,0 +1,20 @@
+- cat.run
+
+- cat.meow
+
+- name: tomten.walk
+  timing: align_finish
+
+- light.on
+
+- name: door.open
+  params:
+    duration: 4
+
+- name: door.close
+  params:
+    duration: 4
+
+- light.off
+
+- tomten.walk

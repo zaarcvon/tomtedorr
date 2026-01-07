@@ -1,0 +1,32 @@
+# Tomten Scenario Format Documentation
+# 
+# This file demonstrates the new, improved scenario syntax designed for:
+# - Clear, human-readable format
+# - Easy LLM generation
+# - Flexible parameter control
+#
+# Supported formats: YAML (.yaml/.yml), JSON (.json), Text (.txt - legacy)
+
+# YAML Format - Simple List
+# Each item can be a simple action name or a complex object
+
+- light.on
+
+- door.open
+  # Optional: specify timing relative to previous action
+  # timing: "default"        # Start after previous ends (default)
+  # timing: "start+1"        # Start 1s after previous started
+  # timing: "finish-0.5"     # Start 0.5s before previous ends
+  # timing: "absolute:2.5"   # Start at absolute time 2.5s
+
+- guest.doorbell
+  # Optional: add parameters for the action
+  # params:
+  #   volume: 0.8
+
+- door.close
+  # Optional: customize hardware parameters
+  # params:
+  #   duration: 0.5
+
+- light.off

@@ -1,4 +1,0 @@
-light.on
-door.open
-door.close
-light.off

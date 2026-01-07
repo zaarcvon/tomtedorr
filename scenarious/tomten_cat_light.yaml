@@ -1,0 +1,57 @@
+# Scenario: Tomten, Cat and the Light Play
+# Tomten switches the light off, cat meows (1.5s), then light on.
+# This off/on cycle repeats 4 times. After the 4th on the cat
+# runs away. Tomten then switches the light off and walks away.
+# The cat runs back, switches it on and meows one last time.
+
+- name: light.off
+
+- name: cat.meow
+  params:
+    duration: 1.5
+
+- name: light.on
+
+- name: light.off
+
+- name: cat.meow
+  params:
+    duration: 1.5
+
+- name: light.on
+
+- name: light.off
+
+- name: cat.meow
+  params:
+    duration: 1.5
+
+- name: light.on
+
+- name: light.off
+
+- name: cat.meow
+  params:
+    duration: 1.5
+
+- name: light.on
+
+- name: cat.run
+  params:
+    duration: 2.5
+
+- name: light.off
+
+- name: tomten.walk
+  params:
+    duration: 3.0
+
+- name: cat.run
+  params:
+    duration: 2.5
+
+- name: light.on
+
+- name: cat.meow
+  params:
+    duration: 1.5

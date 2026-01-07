@@ -1,0 +1,56 @@
+# Available actions for Tomten
+# Keys are action names; values can contain `sound`, `hardware`, and `params`.
+
+cat.run:
+  sound: cat.run.ogg
+
+cat.meow:
+  sound: cat.want_into.ogg
+
+# Door actions with speed-based sounds
+door.open:
+  hardware: door.open
+  sound: door.open.ogg
+  creek_sound: door_creak.ogg
+  
+door.close:
+  hardware: door.close
+  sound: door.close.ogg
+  creek_sound: door_creak.ogg
+
+door.unlock:
+  sound: door.unlock.ogg
+
+door.shut:
+  sound: door.shut.ogg
+  sounds_by_speed:
+    slow:      door.shut.ogg       # <0.3 pulsewidth units/sec
+    medium:    door.shut.ogg     # 0.3-0.7
+    fast:      door.shut.ogg       # >0.7
+
+light.on:
+  sound: light.on.ogg
+  hardware: light.on
+
+light.off:
+  sound: light.off.ogg
+  hardware: light.off
+
+light.toggle:
+  hardware: light.toggle
+
+tomten.walk:
+  sound: tomten.walk.ogg
+
+guest.doorbell:
+  sound: doorbell.ogg
+
+guest.snowwalk:
+  sound: outside.snowwalk.ogg
+
+outside.footsteps_running:
+  sound: outside.footsteps_running_away.ogg
+
+door.knocking:
+  sound: door.knocking_angrily.ogg
+

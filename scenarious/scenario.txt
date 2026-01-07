@@ -1,8 +1,0 @@
-cat.run
-cat.meaw
-tomten.walk -S finish
-light.on
-door.open
-door.close
-light.off
-tomten.walk

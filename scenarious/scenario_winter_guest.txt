@@ -1,5 +1,0 @@
-guest.snowwalk
-guest.doorbell
-tomten.walk -S start+2
-door.open -S finish+1.5
-door.close -S start+3

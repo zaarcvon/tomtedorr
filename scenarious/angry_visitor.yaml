@@ -1,0 +1,36 @@
+# Scenario: Angry Visitor and Tomten's Response
+# Someone approaches the door, knocks angrily, and runs away.
+# Tomten hears it, opens the door, closes it, and walks away.
+
+- name: outside.footsteps_running
+  params:
+    duration: 3.0
+
+- name: door.knocking
+
+- name: outside.footsteps_running
+
+- name: tomten.walk
+  params:
+    duration: 3.0
+
+- name: door.unlock
+
+- name: door.open
+  params:
+    duration: 3
+    duration_mode: stretch
+
+- name: door.close
+  params:
+    duration: 3
+    duration_mode: stretch
+
+- name: door.shut
+  timing: align_finish
+
+
+
+- name: tomten.walk
+  params:
+    duration: 3.0

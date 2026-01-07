@@ -1,0 +1,10 @@
+# YAML test scenario
+- light.on
+
+- name: cat.run
+  duration: 2
+  duration_mode: truncate
+
+- name: door.open
+  duration: 1
+  duration_mode: stretch

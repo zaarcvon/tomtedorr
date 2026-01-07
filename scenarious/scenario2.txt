@@ -1,5 +1,0 @@
-tomten.walk
-cat.run -S start+1.5
-cat.meaw -S finish
-door.open -S finish+0.5
-door.close -S finish+1
